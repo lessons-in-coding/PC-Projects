@@ -55,17 +55,18 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 nav {
   background:
-  linear-gradient(200deg, rgba(253, 169, 80, 0.63), transparent),
+  linear-gradient(200deg, rgba(253, 169, 80, 0.63), transparent), /* , 0.63 */
   linear-gradient(300deg, rgb(239, 241, 139), transparent),
-  linear-gradient(100deg, rgba(134, 215, 242, 0.8), transparent);
+  linear-gradient(100deg, rgba(134, 215, 242, 0.8), transparent); /* 0.8 */
   
   /* background-color: var(--header-footer-bg-color); */
   padding: 25px;
-  z-index: 100;
+  z-index: 999;
 }
 
 .container {

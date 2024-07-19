@@ -230,7 +230,7 @@ tfoot td {
   /* border-radius: 5px; */
 }
 
-caption {
+.chapter-title {
   color: rgb(126, 157, 3);
   font-size: 1.4rem;
   font-weight: 400;
@@ -305,4 +305,26 @@ tfoot {
   margin: 0 auto;
   font-size: 1.5rem;
   color: goldenrod;
+}
+
+.tgroup {
+  border-collapse: collapse; /* Collapse table borders */
+  width: 600px;
+  margin: 10px auto;
+}
+.tgroup td,
+.tgroup th {
+  border: none; /* Remove borders from table cells */
+  padding: 0px 9px; /* Add padding for cell content */
+}
+.tgroup tr td {
+  text-align: left;
+  padding-left: 25px;
+}
+.tgroup h2 {
+  display: none; /* Hide the h2 element within tbody */
+}
+.section-title {
+  color: rgba(58, 62, 179, 0.825);
+  font-size: 1.2rem;
 }
