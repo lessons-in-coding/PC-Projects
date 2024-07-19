@@ -9,9 +9,10 @@
   --button-bg-color: rgb(85, 82, 76);
   --button-bg-hover: rgb(110, 109, 107);
   --border-left: lightskyblue;
-  --highlighted-color: #4caf50;
+  --highlighted-color: #38973b;
   --card-border-radius: 6px;
   --accent-red: #bc2e14;
+  --accent-darkblue: darkblue;
 }
 
 * {
@@ -26,19 +27,27 @@
 /* Theme styles */
 .nav-item a,
 footer a {
-  color: var(--header-footer-color);
+  color: var(--primary-hover);
   text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 20px;
+  z-index: 100;
 }
 
 .nav-item a:hover,
 footer a:hover {
-  background-color: var(--highlighted-color);
-  color: var(--primary-color);
-  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--highlighted-color);
+  border-radius: 20px;
+  /* padding: 9px 19px; */
 }
 
 .donate {
-  color: var(--primary-color) !important;
+  /* color: var(--highlighted-color) !important; */
+  /* background-color: var(--primary-color); */
+  border: 0.09px solid var(--primary-color);
+  border-radius: 20px;
+  /* padding: 10px 20px !important; */
 }
 
 /* Header styles */
@@ -49,8 +58,13 @@ header {
 }
 
 nav {
-  background-color: var(--header-footer-bg-color);
-  padding: 20px;
+  background:
+  linear-gradient(200deg, rgba(253, 169, 80, 0.63), transparent),
+  linear-gradient(300deg, rgb(239, 241, 139), transparent),
+  linear-gradient(100deg, rgba(134, 215, 242, 0.8), transparent);
+  
+  /* background-color: var(--header-footer-bg-color); */
+  padding: 25px;
   z-index: 100;
 }
 
@@ -278,8 +292,12 @@ nav {
 
 /* Footer styles */
 footer {
-  background: var(--header-footer-bg-color);
-  color: var(--header-footer-color);
+  background:
+  linear-gradient(200deg, rgba(253, 169, 80, 0.63), transparent),
+  linear-gradient(300deg, rgb(239, 241, 139), transparent),
+  linear-gradient(100deg, rgba(134, 215, 242, 0.8), transparent);
+  /* background: var(--header-footer-bg-color); */
+  color: var(--secondary-color);
   padding: 25px 35px;
   display: flex;
   flex-direction: row;
@@ -297,7 +315,6 @@ footer h2 {
 
 footer div {
   line-height: 1.5;
-  text-align: right;
 }
 
 footer a {

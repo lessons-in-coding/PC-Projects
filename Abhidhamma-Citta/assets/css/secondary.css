@@ -143,24 +143,28 @@
 
 /* စိတ်သရုပ်ခွဲ */
 .table {
-  padding: 35px;
+  padding: 24px;
   /* z-index: 100; */
   /* font-family: cursive, sans-serif; */
 }
 .t-bg {
+  /* border: 1px solid #fede00; */
+  padding: 20px 0;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* gap: 15px; */
+  /* justify-content: space-evenly; */
 }
 .table ul > li a {
-  color: #4caf50;
+  box-shadow: 0 2px 4px #39b1bf;
+  background-color: #fede00;
+  border-radius: 25px;
+  color: #39b1bf;
   padding: 10px 20px;
+  font-size: 1.5rem;
   &:hover {
-    background-color: #fede00;
+    background-color: #39b1bf;
     border: none;
     border-radius: 25px;
-    color: #0a7029;
+    color: #fede00;
   }
 }
 .table-container {
@@ -220,9 +224,9 @@ tfoot td {
 }
 
 .ttotal {
-  color: #ccc;
-  box-shadow: 1px 1px 3px rgba(154, 4, 4, 0.607);
-  background-color: #dbe8d8;
+  color: darkseagreen;
+  /* box-shadow: 1px 1px 3px rgba(154, 4, 4, 0.607); */
+  /* background-color: #dbe8d8; */
   /* border-radius: 5px; */
 }
 
@@ -265,7 +269,40 @@ caption {
 }
 
 .citta {
-  background: linear-gradient(100deg, rgba(238, 214, 211, 0.8), transparent),
+  background: linear-gradient(100deg, #f6f6f6a5, transparent),
+    linear-gradient(300deg, #efefefa5, transparent),
+    linear-gradient(200deg, #dededea5, transparent);
+
+  /* background: linear-gradient(100deg, rgba(238, 214, 211, 0.8), transparent),
     linear-gradient(200deg, rgba(152, 215, 194, 1), transparent),
-    linear-gradient(300deg, rgba(253, 183, 80, 1), transparent);
+    linear-gradient(300deg, rgba(253, 183, 80, 1), transparent); */
+}
+
+.caption {
+  box-shadow: 0 2px 4px #39b1bf;
+  background-color: #39b1bf;
+  border-radius: 25px;
+  color: #fede00;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+  cursor: default;
+  &:hover {
+    background-color: #fede00;
+    border: none;
+    border-radius: 25px;
+    color: #39b1bf;
+  }
+}
+
+tfoot {
+  background: linear-gradient(300deg, rgba(181, 226, 244, 0.803), transparent),
+    linear-gradient(100deg, rgba(248, 245, 78, 0.659), transparent),
+    linear-gradient(300deg, rgba(206, 246, 181, 0.898), transparent);
+}
+
+.respect {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: goldenrod;
 }
